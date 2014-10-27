@@ -5,7 +5,7 @@ Create thumbnail images, convert image types.
 
 ### 1.Basic Usage Example
 ```
-$image = new Monapi\Image\Thumbnail('your_image_file.jpg');
-$image->resize(100,100);
-$image->save('destination_file.jpg');
+$thumbnailer = new Monapi\Image\Thumbnail('your_image_file.jpg');
+$thumbnailer->resize(100,100);
+$thumbnailer->save('destination_file.jpg');
 ```
