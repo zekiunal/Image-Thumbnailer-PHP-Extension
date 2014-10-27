@@ -1,0 +1,25 @@
+
+extern zend_class_entry *monapi_image_resizeoptions_resizeoptionabstract_ce;
+
+ZEPHIR_INIT_CLASS(Monapi_Image_ResizeOptions_ResizeOptionAbstract);
+
+PHP_METHOD(Monapi_Image_ResizeOptions_ResizeOptionAbstract, getSizeByFixedHeight);
+PHP_METHOD(Monapi_Image_ResizeOptions_ResizeOptionAbstract, getSizeByFixedWidth);
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_monapi_image_resizeoptions_resizeoptionabstract_getsizebyfixedheight, 0, 0, 3)
+	ZEND_ARG_INFO(0, height)
+	ZEND_ARG_INFO(0, original_width)
+	ZEND_ARG_INFO(0, original_height)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_monapi_image_resizeoptions_resizeoptionabstract_getsizebyfixedwidth, 0, 0, 3)
+	ZEND_ARG_INFO(0, width)
+	ZEND_ARG_INFO(0, original_width)
+	ZEND_ARG_INFO(0, original_height)
+ZEND_END_ARG_INFO()
+
+ZEPHIR_INIT_FUNCS(monapi_image_resizeoptions_resizeoptionabstract_method_entry) {
+	PHP_ME(Monapi_Image_ResizeOptions_ResizeOptionAbstract, getSizeByFixedHeight, arginfo_monapi_image_resizeoptions_resizeoptionabstract_getsizebyfixedheight, ZEND_ACC_PROTECTED|ZEND_ACC_STATIC)
+	PHP_ME(Monapi_Image_ResizeOptions_ResizeOptionAbstract, getSizeByFixedWidth, arginfo_monapi_image_resizeoptions_resizeoptionabstract_getsizebyfixedwidth, ZEND_ACC_PROTECTED|ZEND_ACC_STATIC)
+  PHP_FE_END
+};
