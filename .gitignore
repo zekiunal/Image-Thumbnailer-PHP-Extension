@@ -28,3 +28,4 @@ ext/.deps
 ext/libtool
 
 .idea/
+.idea/*
